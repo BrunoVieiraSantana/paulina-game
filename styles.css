@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#000066, #000033); 
+}
+.star {
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+}
+.moon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #fff;
+}
+    
+
+.tubo {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: tubo-animation 2s infinite linear;
+}
+
+
+@keyframes tubo-animation {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+.nezuko {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.pulo {
+    animation: pulo 800ms ease-out;
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+
+.nuvens {
+    position: absolute;
+    margin-top: 100px;
+    width: 550px;
+    animation: nuvens-animation 20s infinite linear;
+    display: none;
+
+}
+
+@keyframes nuvens-animation {
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.pontuacao {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.game-over img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.try-again-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.win {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

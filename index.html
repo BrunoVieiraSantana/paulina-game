@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nezuko game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <div class="game-board">
+        <div class="star" style="top: 50px; left: 100px;"></div>
+        <div class="star" style="top: 150px; left: 200px;"></div>
+        <div class="star" style="top: 200px; left: 300px;"></div>
+        <div class="moon" style="top: 100px; right: 100px;"></div>
+        
+        <span class="pontuacao">Pontuação: <span id="score">0</span></span>
+        <div class="game-over">
+            <img src="./images/gameover.png" alt="Game Over">
+            <button onclick="resetGame()" class="try-again-btn">Tentar Novamente</button>
+        </div>
+        <div class="win">
+            <img src="./images/win.png" alt="Parabéns">
+        </div>
+        <img src="./images/nuvens.png" class="nuvens">
+        <img src="./images/nezuko.gif" class="nezuko">
+        <img src="./images/tubo.png" class="tubo">
+        
+    </div>
+    
+</body>
+</html>
