@@ -56,6 +56,15 @@
     
 }
 
+.tanjiro {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    display: none;
+    
+}
+
 .pulo {
     animation: pulo 800ms ease-out;
 }
