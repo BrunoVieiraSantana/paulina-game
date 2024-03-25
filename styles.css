@@ -28,7 +28,20 @@
     border-radius: 50%;
     box-shadow: 0 0 50px #fff;
 }
-    
+
+.cred {
+    font-family: Forte;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #1a25b7;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    display: none;
+    }
 
 .tubo {
     position: absolute;

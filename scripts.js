@@ -27,6 +27,7 @@ const pulo = () => {
         document.querySelector('.moon').style.display = 'none';
         document.querySelector('.star').style.display = 'none';
         document.querySelector('.tanjiro').style.display = 'block';
+        document.querySelector('.cred').style.display = 'block';
         document.querySelector('.game-board').style.background = 'linear-gradient(#87CEEB, #E0F6FF)';
         tubo.style.display = 'none';
     }
