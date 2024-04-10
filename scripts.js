@@ -20,7 +20,7 @@ const pulo = () => {
         nezuko.classList.remove('pulo');
     }, 800);
     updateScore();
-    if (score >= 5) {
+    if (score >= 50) {
         clearInterval(loop);
         document.querySelector('.win').style.display = 'block';
         document.querySelector('.nuvens').style.display = 'block';
