@@ -43,11 +43,17 @@
     display: none;
     }
 
+@media screen and (max-width: 600px) {
+    .tubo {
+        animation-duration: 0.5s;
+    }
+}
+
 .tubo {
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: tubo-animation 1.3s infinite linear;
+    animation: tubo-animation 2s infinite linear;
 }
 
 
